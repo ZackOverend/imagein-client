@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 export default function BackgroundGrid() {
   const { scrollY } = useScroll();
