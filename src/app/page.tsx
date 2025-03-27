@@ -15,16 +15,16 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <main className="flex flex-col px-24 py-24 w-screen">
+      <main className="flex flex-col px-[3rem] sm:px-24 py-24 w-screen">
         {/* Section 1 */}
         <motion.section
-          className="grid grid-cols-2 items-center h-[85vh]"
+          className="grid sm:grid-cols-2 items-center h-[85vh]"
           whileInView="animate"
           viewport={{ once: true }}
           {...fadeInUp}
         >
           <motion.h1
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight"
+            className="text-6xl text-center sm:text-6xl md:text-7xl sm:text-start lg:text-8xl xl:text-9xl leading-tight"
             {...fadeInUp}
           >
             SEE <br />
@@ -54,7 +54,9 @@ export default function Home() {
           viewport={{ once: true }}
           {...fadeInUp}
         >
-          <ImageUploader />
+          <div className="scale-75 sm:scale-100">
+            <ImageUploader />
+          </div>
 
           <Image
             src="/abstract.png"
