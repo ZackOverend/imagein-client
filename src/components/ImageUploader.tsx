@@ -103,7 +103,7 @@ const ImageUploader: React.FC = () => {
 
       {tags.length > 0 && (
         <div className="mt-6">
-          <ul className="flex gap-2">
+          <ul className="flex flex-wrap gap-2 items-center justify-center">
             {tags.slice(0, 5).map((tag, index) => (
               <li
                 key={index}
