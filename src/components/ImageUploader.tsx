@@ -29,7 +29,7 @@ const ImageUploader: React.FC = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://imagein-api.onrender.com/api/image/UploadFile",
+        "https://imagein-c9c6asg3adbkbke6.canadacentral-01.azurewebsites.net/api/image/UploadFile",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
